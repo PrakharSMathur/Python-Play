@@ -11,7 +11,7 @@ def Download():
 	    print(count,i.extension, i.get_filesize(), bitmath.Byte(bytes=i.get_filesize()).best_prefix())
 	    count+=1
 	tno=int(input("Select track to Download: "))
-	audiostreams[tno].download(filepath="F:/Python Songs")
+	audiostreams[tno].download()
 def Repeat():
 	import os
 	import sys
